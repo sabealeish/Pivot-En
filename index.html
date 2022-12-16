@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- icon css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="open-menu">
+        <span>
+          <i onclick="show_nav()" class="fa fa-bars" aria-hidden="true"></i>
+        </span>
+      </div>
+      <div class="navbar">
+        <ul>  
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#data">Data</a></li>
+          <li><a href="#servises">Servises</a></li>
+          <li><a href="#home">Home</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/255.png" alt="logo" />
+        </a>
+      </div>
+      
+    </header>
+    <div class="mobile-nav">
+      <div class="close-mnuo">
+        <i onclick="disply_nav()" class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#servises">Servises</a></li>
+        <li><a href="#data">Data</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- seaction main -->
+    <section class="main" id="home">
+      <div class="overlay"></div>
+      <div class="main-content">
+        <h1> Enhancing Innovations With Most Accurate Data</h1>
+       <span style="color: #ffffff; font-size: 16px;">The first company specialized in big real estate data in Saudi Arabia <i style="margin-right: 10px;" class="fa-solid fa-medal"></i></span>
+      </div>
+
+
+    </section>
+    <!-- End seaction main -->
+    <!-- div boxs -->
+    <div class="boxs">
+      <div class="box">
+        <i class="fa fa-globe" aria-hidden="true" id="globe"></i>
+        <h2>Comprehensive</h2>
+        <span>
+          A variety of data that we provide to you that will help you make systematic decisions       </span>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-medal" id="medal"></i>
+        <h2>Quality</h2>
+        <span>We provide you with a large amount of real estate data after conducting revision and filtering processes to reach what you want accurately.
+        </span>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-database" id="database"></i>
+        <h2>Flexibility</h2>
+        <span>
+          Real estate data takes more than one format according to your request.      </span>
+      </div>
+    </div>
+    <!-- End div boxs -->
+    <!-- seation servise-->
+    <section class="servises" id="servises">
+      <h2 class="titel-hed">Our Services</h2>
+      <div class="boxs-se">
+        <div class="ser-box box ">
+            <i class="fa-solid fa-house-circle-check" id="house"></i>
+          <h3>Real estate Bulk Data</h3>
+          <i class="fa-solid fa-chevron-up arow" onclick="show_con(this)"></i>
+          <p class="ditelis_ser">
+            Having worked on more than 1,000 real estate economic projects across the Kingdom of Saudi Arabia, we believe we are uniquely positioned to help provide you with real-time market data. Where we provide a full range of data services that specifically meet the requirements of the clients, as we check the quality of the data, clean it, exclude inaccurate data, so that we can ensure that you are using the right and sound data.
+              
+          </p>
+        </div>
+        <div class="ser-box box">
+            <i class="fa-solid fa-shop" id="shop"></i>
+          <h3 class="h3-shop">       Market study and search for investment sites, rental spaces and real estate products</h3>
+          <i class="fa-solid fa-chevron-up arow" onclick="show_con(this)"></i>
+          <p class="ditelis_ser">
+            At Pivot<sup>XY</sup>, we are specialized in turning raw real estate data into a visual, interactive, and integrated experience that enables sound decisions making for the diffrent segmentats of the market. We are one of the first real estate market research to be based in Saudi Arabia, and we combine our analytical expertise with decades of consulting experience to add value to your business. With the help of our market survey for the real estate industry, you can access insightful analysis of multiple real estate sectors such as residential, commercial, retail, etc.
+              
+          </p>
+        </div>
+        <div class="ser-box box">
+          
+            <i class="fa-regular fa-handshake" id="handshake"></i>
+          <h3> Real estate brokerage </h3>
+          <i class="fa-solid fa-chevron-up arow" onclick="show_con(this)"></i>
+          <p class="ditelis_ser">
+            We focus 100% on creative real estate marketing. We have a team of high qualifications and extensive experience in the market. Our mission is always to work collaboratively with our clients to provide marketing strategies and tactical implementation that best aligns with the clients’ needs
+              
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- seation Daata-->
+    <section class="data" id="data">
+      <div class="overlay"></div>
+
+      <div class="data-img">
+        <img src="img/ux-indonesia-8mikJ83LmSQ-unsplash.jpg">
+      </div>
+      <div>
+      <h2 class="titel-hed">Industries We Cover</h2>
+      <span>Raw Lands dara <i class="fa-solid fa-house"></i></span>
+      <span>Commercial Real Estate Data <i class="fa-solid fa-industry"></i> </span>
+      <span>Residential Real Estate Data <i class="fa-solid fa-house-chimney"></i></span>
+      <span>Office Sector Data <i class="fa-solid fa-building"></i></span>
+      <span>And More <i class="fa-solid fa-sitemap"></i></span>
+    </div>
+    </section>
+    <!-- End seaction data -->
+    <!-- seaction content -->
+    <section class="contact" id="contact">
+      <h2>Connect Us</h2>
+      <div class="contact-continer">
+        
+        <div class="contact-img">
+          <img src="img/Connected world-amico.svg" alt="gair"/>
+        </div>
+        <div class="contact-form">
+        <form action="index.php" method="POST">
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="text" name="company" placeholder="Company" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+          />
+          <select class="input" name="type">
+            <option disabled selected>The service you are looking for</option>
+            <option>Real estate big data Bulk Data</option>
+            <option >Market study and search for investment sites</option>
+            <option>Real estate brokerage</option>
+          </select>
+
+          <input type="submit" name="sub" value="Send ">
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- End seaction content -->
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+
+
+
+        <div class="list">
+          <ul class="social">
+  
+
+            <li>
+              <a target="_blank" href="mailto:info@pivotxy.com" target="_blank"
+              <i class="fa-solid fa-envelope" id="icon"></i>
+             </a>
+            </li>
+
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/company/pivotxy/" target="_blank"
+              <i class="fa-brands fa-linkedin" id="icon"></i></a>
+            </li>
+
+            <li>
+              <a target="_blank" href="https://twitter.com/pivotxy?s=21&t=jHRUuL2lk2lg2N6eFD6fcg" target="_blank"
+              <i class="fa-brands fa-twitter" id="icon"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="list">
+          <ul>
+            <li>
+              Riyadh
+              <i class="fa-solid fa-location-dot"></i>
+            </li>
+            <li>
+             info@pivotxy.com
+              <i class="fa-solid fa-envelope"></i>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div class="list">
+          <ul>
+            <li class="list_hed"><a href="#home">Home</a></li>
+            <li><a href="#servises">Servises</a></li>
+            <li><a href="#data">Data</a></li>
+            <li><a href="#contact"> Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="list">
+          <img src="img/1235-removebg-preview.png" alt="logo"/>
+          <span>Your decisions start here Pivot<sup>XY</sup> </span>
+        </div>
+      </div>
+      <div class="copy-right">
+        <span>
+          
+          All Rights Reserved 2022 Pivot<sup>XY</sup> 
+          <i class="fa fa-copyright" aria-hidden="true"></i> 
+        </span>
+      </div>
+    </footer>
+    <!-- End footer -->
+    <!-- script  -->
+    <script src="js/script.js"></script>
+    <script src="js/all.min.js"></script>
+  
+  </body>
+</html>
